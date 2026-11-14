@@ -19,3 +19,5 @@ server/scripts/live-*.mjs
 docs/*.png
 docs/*.pdf
 *.docx
+
+docs/compact-qa/
