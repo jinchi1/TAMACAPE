@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="pleos.car.permission.STT_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.type.automotive" android:required="true" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <queries><intent><action android:name="android.intent.action.TTS_SERVICE" /></intent></queries>
+    <application android:label="TAMACAPE" android:allowBackup="false"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar"
+        android:appCategory="game" android:enableOnBackInvokedCallback="true">
+        <service android:name=".SongPlayback" android:exported="false"
+            android:foregroundServiceType="mediaPlayback">
+            <intent-filter><action android:name="android.media.browse.MediaBrowserService" /></intent-filter>
+        </service>
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
