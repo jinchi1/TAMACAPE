@@ -1,0 +1,28 @@
+name = "pleos-kids-ai"
+main = "src/worker.mjs"
+compatibility_date = "2026-11-13"
+workers_dev = true
+preview_urls = false
+
+[vars]
+OPENAI_MODEL = "gpt-5.6-luna"
+MUSIC_ENABLED = "false"
+
+[observability]
+enabled = false
+
+[[ratelimits]]
+name = "AI_LIMITER"
+namespace_id = "73001"
+simple = { limit = 6, period = 60 }
+
+# Set OPENAI_API_KEY, APP_ACCESS_TOKEN, ACCESS_EXPIRES_AT as secrets.
+# No credentials or account identifier belong in this file.
+
+[[durable_objects.bindings]]
+name = "FAMILY_BUDGET"
+class_name = "FamilyBudget"
+
+[[migrations]]
+tag = "family-budget-v1"
+new_sqlite_classes = ["FamilyBudget"]
