@@ -40,3 +40,13 @@ Cloudflare Worker 중계 소스는 `server/`에 있습니다. OpenAI 및 ElevenL
 현재 상태: [남은 작업](docs/REMAINING_WORK.md), [동요 구현과 실제 생성 결과](docs/SONG_IMPLEMENTATION.md), [구현 이력](docs/IMPLEMENTATION_CHECKLIST.md).
 
 참가자의 연락처·서명이 포함된 공모전 신청서, API 키, 시연 접속 코드, 빌드 캐시와 로컬 설정은 공개 저장소에 포함하지 않습니다.
+
+## 공모전 제출 파일
+
+- 저장소 주소: https://github.com/jinchi1/TAMACAPE
+- APK 경로: `apk/TAMACAPE-0.1.0-demo.apk`
+- [APK 다운로드](https://github.com/jinchi1/TAMACAPE/raw/refs/heads/main/apk/TAMACAPE-0.1.0-demo.apk)
+- [63초 시연 영상](demo/TAMACAPE-demo.mp4)
+- 영상 경로: `demo/TAMACAPE-demo.mp4`
+
+APK는 2026-11-15에 빌드한 디버그 서명 시연 버전입니다. 설치 환경과 검증 결과는 [APK 안내](apk/README.md), 영상 구성은 [시연 안내](demo/README.md)를 참고하세요.
