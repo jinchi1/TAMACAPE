@@ -1,6 +1,6 @@
 # TAMACAPE 타마카페
 
-Pleos Connect 차량에서 부모와 아이가 함께 즐기는 교통안전 퀴즈·캐릭터 성장·AI 동요 앱입니다. 기존 Restway와 독립된 Android 프로젝트입니다.
+Pleos Connect 차량에서 부모와 아이가 함께 즐기는 교통안전 퀴즈·캐릭터 성장·AI 동요 앱입니다.
 
 ## 현재 기능
 
